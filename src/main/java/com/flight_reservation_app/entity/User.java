@@ -12,10 +12,8 @@ import javax.persistence.*;
 @Entity
 @Table(name = "users")
 
-public class User {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class User extends AbstractEntity {
+
     private String firstName;
     private String lastName;
     private String email;
